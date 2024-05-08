@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Page</title>
+    <link rel="stylesheet" href="refund.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Request a Refund</h2>
+        <form action="userrefund.html" method="post">
+            <label for="orderNumber">Enter Order Id.</label>
+            <input type="text" id="orderNumber" name="orderNumber" required>
+            <label for="reason">Reason for Refund:</label>
+            <textarea id="reason" name="reason" required></textarea>
+            <button type="submit" name="submit">Request Refund</button>
+        </form>
+    </div>
+</body>
+</html>
