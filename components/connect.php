@@ -1,8 +1,8 @@
 <?php
 
-$db_name = 'mysql:host=localhost;dbname=shop_db';
-$user_name = 'root';
-$user_password = '';
+$db_name = 'if0_39638326_shop_db';
+$user_name = 'if0_39638326';
+$user_password = 'ojD4iacl6Uc';
 
 $conn = new PDO($db_name, $user_name, $user_password);
 
