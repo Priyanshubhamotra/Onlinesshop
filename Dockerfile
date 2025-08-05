@@ -1,11 +1,12 @@
-# Use the official PHP image with Apache
 FROM php:8.2-apache
 
-# Enable Apache mod_rewrite (optional if needed)
+# Enable Apache mod_rewrite (optional, for frameworks)
 RUN a2enmod rewrite
 
-# Copy all project files into Apache's public directory
+# Copy everything to Apache's root
 COPY . /var/www/html/
 
-# Expose the port Apache runs on
+# Give read permissions (prevents 403)
+RUN chmod -R 755 /var/www/html/
+
 EXPOSE 80
