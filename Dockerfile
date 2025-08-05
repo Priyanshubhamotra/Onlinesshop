@@ -6,6 +6,7 @@ RUN a2enmod rewrite
 
 # Copy everything to Apache's root
 COPY . /var/www/html/
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Give read permissions (prevents 403)
 RUN chmod -R 755 /var/www/html/
